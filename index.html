@@ -4,10 +4,8 @@
       
     <link href="styles/style.css" rel="stylesheet"/>
     <link rel="icon" href="Archivo.png">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <style>
     h1 {
       font-size: 35px;
@@ -59,49 +57,65 @@ background-color: yellow;
 </head>
 <body>
     <header>
-    <nav class="navbar fixed-top navbar navbar-expand-lg navbar-light bg-light">
-        <!-- Image and text -->
-    <a class="navbar-brand" href="#">
-      <img src="Archivo.png" width="30" height="30" class="d-inline-block align-top" alt="">
-      Nhat Minh's official webpage</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="https://www.youtube.com/@NOPEakaphamminhteky1">My youtube channel</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="https://github.com/phamminhteky1">My github profile</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                My scratch accounts
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="https://scratch.mit.edu/users/phamminhteky1/">phamminhteky1 (alt)</a>
-                <a class="dropdown-item" href="https://scratch.mit.edu/users/phamminhteky1new/">phamminhteky1new (main)</a>
-                <a class="dropdown-item" href="https://scratch.mit.edu/users/phamminhteky1new2/">phamminhteky1new2 (School)</a>
+        <nav class="navbar fixed-top navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#home">
+                <img src="Archivo.png" width="30" height="24">
+                Nhat Minh's official page</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#home">Introduction</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#fav">Fav things</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Projects
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="">Project lists here</a></li>
+                      <li><a class="dropdown-item" href="https://phamminhteky1-fix.github.io/profiloas">Profiloas</a></li>
+                      <li><a class="dropdown-item" href="#mis">miscellaneous classworks</a></li>
+                </ul></li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Accounts
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><h5 class="dropdown-header">Scratch accounts</h5></li>
+                      <li><a class="dropdown-item" href="https://scratch.mit.edu/phamminhteky1new">phamminhteky1new (main)</a></li>
+                      <li><a class="dropdown-item" href="https://scratch.mit.edu/phamminhteky1">phamminhteky1 (alt)</a></li>
+                      <li><a class="dropdown-item" href="https://scratch.mit.edu/phamminhteky1new2">phamminhteky1new2 (school)</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li>              
+                        <a class="dropdown-item" href="#">Github profile</a>
+                      </li>
+                      <li><a class="dropdown-item" href="">Youtube channel</a></li>
+                </ul></li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="https://phamminhteky1-fix.github.io">Return to Phamminhteky1's official page</a>
+                  </li>
               </div>
-            </li>
-          </ul>
-        </div>
-      </nav></header>
-    <div class="title"><Br><br><Br>
+            </div>
+          </nav></header>
+    <section class="title" id="home"><Br><br><Br><section>
 <center><img src="Archivo.png" height="200px" width="200px" alt="My OC (Original character)"></center>
     <p style="text-align: center;"><strong>Student of <a href="https://visionmentorsvn.com">Vision Mentors</a>, <a href="https://thcs-doanthidiem.edu.vn">Doan Thi Diem Secondary School</a>, Content Creator and Author</strong></p><br>
    <p>I was born on 12th of June, 2013. Since I was 4, I knew how to power My dad's computer on or off. At the summer of 2021, because I love to play with LEGOs very much, my mom sent me to a robotic class, without knowing this is going to be an turning point of her son's life. At there, I get familar with progamming and engeneering. At level 4, I learns to progam the robots using Scratch. This intrests me and when I switched to learn Scratch, my teacher named my first account and now one of the 2 alts: phamminhteky1. Afterwards, I created 1 more account and now it's the main Scratch: phamminhteky1new.</p></body></div><br>
 <b><p class="skills font-weight-bold">I knew HTML and CSS and Scratch. Check out my <a href="https://github.com/phamminhteky1">GitHub profile</a> for some of my class project and my main Scratch account (you might find that in the navbar and all other links in this paragrath) - <a href="https://scratch.mit.edu/users/phamminhteky1new/">phamminhteky1new</a> or visit <a href="https://www.youtube.com/@NOPEakaphamminhteky1">My Youtube channel.</a></p></b>
 <div class="alert alert-danger alert-dismissible fade show" role="alert">
-    <strong>Holy guacamole!</strong> You should check those cool info about me and my cool things below.
-    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-      <span aria-hidden="true">&times;</span>
-    </button>
+    <strong>Holy guacamole!</strong> You should check cool info about me bellow.
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
   </div>
+</section>
   <br>
    <hr size="3" noshade>
-   <details open>
+   <section id="fav"><details open>
     <summary>Fav things</summary>
    <h2>Fav things</h2>
     <details>
@@ -123,14 +137,17 @@ background-color: yellow;
 </ol>
 </details>
 </details>
+</section>
 <hr size="3" noshade>
 <details>
 <summary>My class projects (in Vision Mentors)</summary>
 <ol>
     <li><a href="">Test (No link)</a></li>
+    <li><a href="https://phamminhteky1-fix.github.io/profiloas">Portfiloas (You may get rickrolled here, so please be careful when surfing the page)</a></li>
 </ol>
 </details>
 <hr size="3" noshade>
+<section id="mis">
 <details open>
     <summary>Miscellaneous things (or some of my miscellaneous classworks)</summary>
     <details>
@@ -294,5 +311,9 @@ src="https://youtu.be/embed/bxOXKFWSC_s"><br>
     <img src="makeitmeme_1NgTC.jpeg" height="500px" width="500px" alt="That's true for some lazy students... (like what I just mentioned in the lazy table exercise)"><img src="makeitmeme_IWnci.jpeg" height="500px" width="500px" alt="Actually, idk what the president of the USA will react to this meme">
 </details>
 </details>
+</section>
 <div class="ending"><footer>End of page. Why do you just always love to read this thing???</div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </html>
