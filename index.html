@@ -301,9 +301,7 @@ background-color: yellow;
     <h2>Mastering THERE IS NO GAME (on scratch) with 5 mins speedrun</h2><br>
     <p>This video has been realised for a few months. I just put maybe... the slightest effort on it. But, I was just, like proud of this video. Just click the red button below and enjoy.</p><Br>
         <p>Not working? <a href="https://youtu.be/bxOXKFWSC_s">Try this link...</a></p>
-    <iframe width="420" height="315"
-src="https://youtu.be/embed/bxOXKFWSC_s"><br>
-</iframe>
+        <iframe width="916" height="515" src="https://www.youtube.com/embed/bxOXKFWSC_s" title="Mastering THERE IS NO GAME: 5 Minute Speedrun (on Scratch, part 1)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 <p>Want to watch here? Click "play" on this video</p><br>
 <video src="y2mate.com - Mastering THERE IS NO GAME 5 Minute Speedrun on Scratch part 1_1080p.mp4" height="315" width="420" disablepictureinpicture controls>
 </details>
@@ -311,6 +309,60 @@ src="https://youtu.be/embed/bxOXKFWSC_s"><br>
     <summary>Memes</summary>
     <h2>Some funny memes I found when I am playing <a href="makeitmeme.com">Make it meme</a> with strangers...</h2>
     <img src="makeitmeme_1NgTC.jpeg" height="500px" width="500px" alt="That's true for some lazy students... (like what I just mentioned in the lazy table exercise)"><img src="makeitmeme_IWnci.jpeg" height="500px" width="500px" alt="Actually, idk what the president of the USA will react to this meme">
+</details>
+<details>
+  <summary>Are you a same sign as me?</summary>
+  <form id="zodiacForm"> 
+    <label for="birthdate">Enter your birthdate:</label>
+     <input type="date" id="birthdate" name="birthdate" required> 
+     <button onclick="checkZodiacSign()" value="check" class="btn btn-primary">Submit</button><br>
+     </form>
+     <h5>I value your privacy</h5><br>
+     <p>Your info won't be sent to server. The info will be stored localy</p><br>
+     <div id="resultMessage"></div>
+<script>
+          document.getElementById('zodiacForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevents the form from submitting and reloading the page
+            checkZodiacSign();
+        });
+
+        function checkZodiacSign() {
+            const myZodiacSign = "Gemini"; // Replace this with your actual zodiac sign
+            
+            let birthdate = document.getElementById('birthdate').value;
+            let userZodiacSign = getZodiacSign(new Date(birthdate));
+            let resultMessage = document.getElementById('resultMessage');
+            
+            if (userZodiacSign) {
+                if (userZodiacSign === myZodiacSign) {
+                    resultMessage.innerText = "We share the same zodiac sign: " + userZodiacSign + "!";
+                } else {
+                    resultMessage.innerText = "Your zodiac sign is " + userZodiacSign + ". We don't share the same sign.";
+                }
+            } else {
+                resultMessage.innerText = "Please enter a valid birthdate.";
+            }
+        }
+
+        function getZodiacSign(date) {
+            let month = date.getUTCMonth() + 1; // getUTCMonth() returns months from 0-11
+            let day = date.getUTCDate();
+
+            if ((month == 1 && day >= 20) || (month == 2 && day <= 18)) return "Aquarius";
+            if ((month == 2 && day >= 19) || (month == 3 && day <= 20)) return "Pisces";
+            if ((month == 3 && day >= 21) || (month == 4 && day <= 19)) return "Aries";
+            if ((month == 4 && day >= 20) || (month == 5 && day <= 20)) return "Taurus";
+            if ((month == 5 && day >= 21) || (month == 6 && day <= 20)) return "Gemini";
+            if ((month == 6 && day >= 21) || (month == 7 && day <= 22)) return "Cancer";
+            if ((month == 7 && day >= 23) || (month == 8 && day <= 22)) return "Leo";
+            if ((month == 8 && day >= 23) || (month == 9 && day <= 22)) return "Virgo";
+            if ((month == 9 && day >= 23) || (month == 10 && day <= 22)) return "Libra";
+            if ((month == 10 && day >= 23) || (month == 11 && day <= 21)) return "Scorpio";
+            if ((month == 11 && day >= 22) || (month == 12 && day <= 21)) return "Sagittarius";
+            if ((month == 12 && day >= 22) || (month == 1 && day <= 19)) return "Capricorn";
+        }
+</script>
+  </form>
 </details>
 </details>
 </section>
