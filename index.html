@@ -35,7 +35,7 @@ background-color: yellow;
     td {
         background-color: yellowgreen;
     }
-    .skills {
+    .skills, .danger {
         color: red;
     }
     .ending {
@@ -145,6 +145,7 @@ background-color: yellow;
 <ol>
     <li><a href="">Test (No link)</a></li>
     <li><a href="https://phamminhteky1-fix.github.io/profiloas">Portfiloas (You may get rickrolled here, so please be careful when surfing the page)</a></li>
+    <li><a href="https://phamminhteky1-fix.github.io/minh_private_page2fix/lorem">My bootstrap carousel homework (Please dont visit this site)</a></li>
 </ol>
 </details>
 </section>
@@ -300,8 +301,7 @@ background-color: yellow;
     <summary>My first video!</summary>
     <h2>Mastering THERE IS NO GAME (on scratch) with 5 mins speedrun</h2><br>
     <p>This video has been realised for a few months. I just put maybe... the slightest effort on it. But, I was just, like proud of this video. Just click the red button below and enjoy.</p><Br>
-        <p>Not working? <a href="https://youtu.be/bxOXKFWSC_s">Try this link...</a></p>
-        <iframe width="916" height="515" src="https://www.youtube.com/embed/bxOXKFWSC_s" title="Mastering THERE IS NO GAME: 5 Minute Speedrun (on Scratch, part 1)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <p><a href="https://youtu.be/bxOXKFWSC_s">Click here</a> to watch...</p>
 <p>Want to watch here? Click "play" on this video</p><br>
 <video src="y2mate.com - Mastering THERE IS NO GAME 5 Minute Speedrun on Scratch part 1_1080p.mp4" height="315" width="420" disablepictureinpicture controls>
 </details>
@@ -327,7 +327,7 @@ background-color: yellow;
         });
 
         function checkZodiacSign() {
-            const myZodiacSign = "Gemini"; // Replace this with your actual zodiac sign
+            const myZodiacSign = "Gemini";
             
             let birthdate = document.getElementById('birthdate').value;
             let userZodiacSign = getZodiacSign(new Date(birthdate));
@@ -337,10 +337,10 @@ background-color: yellow;
                 if (userZodiacSign === myZodiacSign) {
                     resultMessage.innerText = "We share the same zodiac sign: " + userZodiacSign + "!";
                 } else {
-                    resultMessage.innerText = "Your zodiac sign is " + userZodiacSign + ". We don't share the same sign.";
+                    resultMessage.innerText = "Your zodiac sign is " + userZodiacSign + ". We don't share the same sign :(";
                 }
             } else {
-                resultMessage.innerText = "Please enter a valid birthdate.";
+                resultMessage.innerText = "Please enter a valid birthdate";
             }
         }
 
@@ -364,10 +364,29 @@ background-color: yellow;
 </script>
   </form>
 </details>
+<details>
+  <summary>0-infinite numbers</summary>
+  <H2 class="danger">WARNING!!!!!</H2>
+  <P>By clicking "start", you must confirm that your computer is strong enough to withstand extreme operations from 1 to infinite. If not, you may confirm you are destroying your computer and make it explode.</P><br>
+  <button class="btn btn-danger" onclick="danger(0)">Start</button> <!-- Corrected this line -->
+  <div id="nope"></div>
+  <script>
+    function danger(a) {
+      for (let num = a; ; num++) {
+        document.getElementById("nope").innerHTML = num;
+        console.log(num)
+      }
+    }
+  </script>
+</details>
 </details>
 </section>
-<div class="ending"><footer>End of page. Why do you just always love to read this thing???</div>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<div class="ending">
+  <footer>End of page. Why do you just always love to read this thing???</div>
+    <script scr="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </html>
